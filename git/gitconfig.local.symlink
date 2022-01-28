@@ -1,3 +1,5 @@
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
 [alias]
 	co = checkout
 	count = shortlog -sn
@@ -34,15 +36,8 @@
 	default = simple
 [submodule]
 	fetchJobs = 4
-[commit]
-	template = ~/.dotfiles/git/template.txt
-	gpgsign = true
-[tag]
-	gpgsign = true
 [log]
 	showSignature = false
-[pull]
-    ff = only
 [init]
     defaultBranch = main
 [url "git@github.com:"]
